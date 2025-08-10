@@ -672,6 +672,7 @@ img {
 }
 
 .modal-lables {
+    display: block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -680,8 +681,13 @@ img {
     margin-bottom: 4px;
 }
 
+.modal-lables-container {
+    position: relative;
+}
+
 .modal-lable-form {
     position: relative;
+    margin-bottom: 8px;
 }
 
 .modal-input {

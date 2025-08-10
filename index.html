@@ -609,7 +609,7 @@
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <form>
+        <form class="modal-form">
           <div class="modal-lable-form">
             <label class="modal-lables" for="user-name">Name</label>
             <div class="modal-lables-container">
@@ -655,25 +655,25 @@
               </svg>
             </div>
           </div>
-          <div class="modal-lable-form">
-            <label class="modal-lables" for="modal-textarea">Comment</label>
+          <div class="modal-lable-textarea">
+            <label class="modal-lables" for="user-comment">Comment</label>
             <textarea
               class="modal-textarea"
-              name="user_comment"
+              name="user-comment"
               placeholder="Text input"
-              id="modal-textarea"
+              id="user-comment"
             ></textarea>
           </div>
-          <div class="modal-lable-form">
+          <div class="modal-lable-checkbox">
             <input
               class="visually-hidden"
               type="checkbox"
               name="user-privacy"
-              id="modalcheckbox"
+              id="user-privacy"
               value="true"
               required
             />
-            <label class="modal-checkbox" for="modalcheckbox">
+            <label class="modal-checkbox" for="user-privacy">
               <span class="custom-checkbox">
                 <svg class="modal-vector" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>

@@ -233,7 +233,7 @@ img {
 
 .main-button:hover,
 .main-button:focus {
-    background-color: var(--ocean); 
+    background-color: var(--ocean);
 }
 
 .second-tag {
@@ -514,6 +514,8 @@ img {
     transform: translate(-50%, -50%);
 }
 
+/* modal window */
+
 .modal_background {
     position: fixed;
     top: 0;
@@ -544,7 +546,13 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-    border: none;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    background-color: var(--ocean);
+    fill: #F4F4FD;
 }
 
 .svg-modal {
@@ -581,14 +589,25 @@ img {
     color: rgba(46, 47, 66, 0.4);
 }
 
-/* .modal-lable-form {
-} */
+.modal-lable-form {
+    position: relative;
+}
 
 .modal-input {
     width: 100%;
     border: 1px solid var(--navy-blue-modal);
     border-radius: 4px;
     height: 40px;
+    padding-left: 38px;
+    outline: none;
+}
+
+.modal-input:focus {
+    border-color: var(--iris);
+}
+
+.modal-input:focus ~ svg {
+    fill: var(--iris);
 }
 
 .modal-textarea {
@@ -598,14 +617,19 @@ img {
     border-radius: 4px;
     resize: none;
     padding: 8px 16px;
+    outline: none;
+}
+
+.modal-textarea:focus {
+    border-color: var(--iris);
 }
 
 .modal-textarea::placeholder {
     font-weight: 400;
-        font-size: 12px;
-        line-height: 1.16667;
-        letter-spacing: 0.04em;
-        color: var(--navy-blue-modal);
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: var(--navy-blue-modal);
 }
 
 .modal-checkbox {
@@ -630,11 +654,51 @@ img {
     background: var(--iris);
 }
 
+.modal_button_send:hover,
+.modal_button_send:focus {
+    background-color: var(--ocean);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .privacy-policy {
     width: 360px;
     height: 16px;
     margin: 16px 24px 24px 24px;
-    display: block;
-    align-items: center;
+}
+
+.svg-modal-inputs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+.modal-link {
+    color: var(--iris);
+}
+
+.custom-checkbox {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid var(--navy-blue-modal);
+    position: relative;
+    margin-right: 8px;
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.modal-vector {
+    fill: transparent;
+}
+
+#modalcheckbox:checked + .modal-checkbox > .custom-checkbox {
+    background-color: var(--ocean);
+}
+
+#modalcheckbox:checked+.modal-checkbox>.custom-checkbox>.modal-vector {
+    fill: #F4F4FD;
 }

@@ -542,7 +542,7 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-subscribe-buttons input::placeholder {
+.footer-subscribe-input::placeholder {
     color: #ffffff;
 }
 

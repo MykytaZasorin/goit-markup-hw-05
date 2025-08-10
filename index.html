@@ -598,16 +598,19 @@
     <!-- modal window -->
     <div class="modal_background" data-modal>
       <div class="modal-window">
-        <form>
-          <button class="modal-close" type="button" data-modal-close>
-            <svg class="svg-modal" width="8" height="8">
-              <use href="./images/icons.svg#icon-close-simbol"></use>
-            </svg>
-          </button>
-          <p class="modal-text">
-            Leave your contacts and we will call you back
-          </p>
-          <div class="modal-forms">
+        <button
+          class="modal-close"
+          type="button"
+          data-modal-close
+          aria-label="Закрити вікно"
+        >
+          <svg class="svg-modal" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-simbol"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <div class="modal-forms">
+          <form>
             <label class="modal-lables" for="username">Name</label>
             <div class="modal-lable-form">
               <input
@@ -656,7 +659,7 @@
             ></textarea>
           </div>
           <div class="privacy-policy">
-            <input class="visually-hidden" type="checkbox" id="modalcheckbox" />
+            <input class="visually-hidden" type="checkbox" id="modalcheckbox" required />
             <label class="modal-checkbox" for="modalcheckbox">
               <span class="custom-checkbox">
                 <svg class="modal-vector" width="10" height="8">
@@ -668,7 +671,7 @@
             </label>
           </div>
           <button class="modal_button_send" type="submit">Send</button>
-        </form>
+          </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

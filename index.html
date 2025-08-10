@@ -572,5 +572,62 @@
         </div>
       </div>
     </footer>
+    <!-- modal window -->
+    <div class="modal_background">
+      <div class="modal-window">
+        <form>
+          <button class="modal-close" type="button">
+            <svg class="svg-modal" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-simbol"></use>
+            </svg>
+          </button>
+          <p class="modal-text">
+            Leave your contacts and we will call you back
+          </p>
+          <div class="modal-forms">
+            <label class="modal-lables" for="username">Name</label>
+            <div class="modal-lable-form">
+              <input
+                class="modal-input"
+                type="text"
+                name="user_name"
+                id="username"
+              />
+            </div>
+            <label class="modal-lables" for="usertel">Phone</label>
+            <div class="modal-lable-form">
+              <input
+                class="modal-input"
+                type="tel"
+                name="user_tel"
+                id="usertel"
+              />
+            </div>
+            <label class="modal-lables" for="userid">Email</label>
+            <div class="modal-lable-form">
+              <input
+                class="modal-input"
+                type="email"
+                name="user_mail"
+                id="userid"
+              />
+            </div>
+            <label class="modal-lables" for="">Comment</label>
+            <textarea
+              class=""
+              name="user_comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <label for="">
+            <input type="checkbox" />
+            <span></span>
+            I accept the terms and conditions of the
+            <a href="#">Privacy Policy</a>
+          </label>
+          <button class="" type="button">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

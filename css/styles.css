@@ -610,6 +610,7 @@ img {
 }
 
 .modal-window {
+    padding: 72px 24px 24px 24px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -627,28 +628,31 @@ img {
 }
 
 .modal-close {
+    padding: 0;
     border-radius: 50%;
     width: 24px;
     height: 24px;
-    margin-top: 24px;
-    margin-right: 24px;
     position: absolute;
-    top: 0;
-    right: 0;
-    border-color: rgba(0, 0, 0, 0.1);
+    top: 24px;
+    right: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover,
 .modal-close:focus {
     background-color: var(--ocean);
-    fill: #F4F4FD;
+    border: none;
+    fill: #ffffff;
 }
 
 .svg-modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text {
@@ -659,6 +663,7 @@ img {
     margin-left: 24px;
     margin-right: 24px;
     margin-bottom: 16px;
+    color: #2e2f42;
 }
 
 .modal-forms {
@@ -666,8 +671,6 @@ img {
     min-height: 336px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin: 0 24px;
 }
 
 .modal-lables {

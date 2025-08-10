@@ -514,6 +514,68 @@ img {
     transform: translate(-50%, -50%);
 }
 
+.footer-subscribe {
+    margin-left: auto;
+}
+
+.footer-subscribe-buttons {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-subscribe-buttons input {
+    display: inline-block;
+    width: 264px;
+    height: 40px;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    background-color: inherit;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 8px 16px;
+    color: #F4F4FD;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-buttons input::placeholder {
+    color: #F4F4FD;
+}
+
+.footer-subscribe-buttons input:hover,
+.footer-subscribe-buttons input:focus,
+.footer-subscribe-buttons input:active {
+    border-color: var(--green);
+}
+
+.subscribe-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 165px;
+    height: 40px;
+    background-color: var(--iris);
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-submit:hover,
+.subscribe-submit:focus {
+    background-color: var(--green);
+}
+
+.footer-subscribe-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white);
+}
+
+.subscribe-submit svg {
+    fill: #F4F4FD;
+}
+
 /* modal window */
 
 .modal_background {

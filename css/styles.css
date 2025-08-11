@@ -818,6 +818,8 @@ img {
 
 #user-privacy:checked + .modal-checkbox > .custom-checkbox {
     background-color: var(--ocean);
+    fill: #F4F4FD;
+    border: none;
 }
 
 #user-privacy:checked+.modal-checkbox>.custom-checkbox>.modal-vector {
